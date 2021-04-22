@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; 
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+input{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: hsl(249, 10%, 26%);
+}
+@media screen and (min-width: 320px), (max-width: 768px) {
+    .container{
+        background-color: hsl(0, 100%, 74%) ;
+        background-image: url(bg-intro-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .content{
+        text-align: center;
+    }
+    .content h2{
+        margin-top: 90px;
+    }
+    .content p{
+        margin: 0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .button{
+        margin-top: 30px;
+        align-self: center;
+    }
+    .button button{
+        background-color: hsl(248, 32%, 49%) ;
+        color: #fff;
+        border: 0px;
+        border-radius: 5px;
+        max-width: 700px;
+        min-width: 300px;
+        width: 100%;
+        height: 90px;
+        margin-bottom: 15px;
+        box-shadow: 0px 4px rgba(128, 128, 128, 0.384);
+        line-height: 25px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .button b{
+        font-weight: 600;
+    }
+    form{
+        align-self: center;
+        max-width: 700px;
+        min-width: 290px;
+        width: 88%;
+        background-color: #fff;
+        border: 0px;
+        border-radius: 5px;
+        margin-bottom: 35px;
+        box-shadow: 0px 4px rgba(128, 128, 128, 0.384) ;
+    }
+    input{
+        margin-left: 17px;
+        margin-top: 15px;
+        border: 1px solid rgba(128, 128, 128, 0.336);
+        color: hsla(249, 10%, 26%, 0.849);
+        border-radius: 4px;
+        width: 88%;
+        padding-left: 15px;
+        height: 40px;
+    }
+    form button{
+        width: 88%;
+        height: 40px;
+        margin-left: 17px;
+        margin-top: 15px;
+        padding-top: 5px;
+        color: #fff;
+        background-color: hsl(154, 59%, 51%);
+        border: none;
+        border-bottom: rgba(128, 128, 128, 0.384) solid 2px;
+        border-radius: 4px;
+    }
+    form p{
+        text-align: center;
+        color: hsla(249, 10%, 26%, 0.363);
+        font-size: 11px;
+    }
+    form span{
+        color: hsl(0, 100%, 74%) ;
+    }
+}
+@media screen and (min-width: 1024px), (min-width: 1440px) {
+    .container{
+        background-image: url(bg-intro-desktop.png);
+        background-position: center;
+        background-size: cover;
+        background-color: hsl(0, 100%, 74%);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "Content Buttons"
+        "Content forms";
+        grid-column-gap: 50px;
+        justify-content: center;
+        align-content: center;
+        place-items: center;
+        
+    }
+    .content{
+        place-self: center;
+        grid-area: Content;
+        text-align: left;
+        margin: 0;
+        padding: 0px 0px 0px 50px;
+    }
+    .content h2{
+        font-weight: 700;
+        font-size: 29px;
+    }
+    .content p{
+        padding: 0px;
+    }
+    .button{
+        place-self: end center;
+        grid-area: Buttons;
+        margin-bottom: 20px;
+        padding: 0px;
+        max-width: 700px;
+        min-width: 290px;
+        width: 85%;
+    }
+    .button button{
+        height: 70px;
+    }
+    form{
+        place-content: center center;
+        align-self: center;
+        max-width: 700px;
+        min-width: 290px;
+        width: 85%;
+        margin-top: 0px;
+        margin-bottom: 90px;
+        grid-area: forms;
+    }
+    input{
+        margin-left: 10px;
+        margin-top: 15px;
+        border: 1px solid rgba(128, 128, 128, 0.336);
+        color: hsla(249, 10%, 26%, 0.849);
+        border-radius: 4px;
+        width: 95%;
+        padding-left: 19px;
+        height: 50px;
+    }
+    form button{
+        width: 95%;
+        height: 50px;
+        margin-left: 10px;
+        margin-top: 15px;
+        padding-top: 5px;
+        color: #fff;
+        background-color: hsl(154, 59%, 51%);
+        border: none;
+        border-bottom: rgba(128, 128, 128, 0.384) solid 2px;
+        border-radius: 4px;
+    }
+}
+/* rgba(128, 128, 128, 0.178  input border color*/
